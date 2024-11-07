@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Delete</title>
+</head>
+<body>
+	<h1>Delete Book Entry</h1>
+
+	<form action="/delete/<%= bookId %>?_method=DELETE" method="POST">
+		<label for="bookId">Book Id</label>
+		<input type="text" id="bookId" name="id" value="<%= bookId %>" readonly>
+
+		<button type="submit">Delete</button>
+	</form>
+</body>
+</html>
