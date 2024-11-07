@@ -67,26 +67,26 @@ The Book Notes App is a web application built using Express.js, PostgreSQL, and 
 
 ## API Endpoints
 
-# GET /books 
+## GET /books 
 - Retrive all the books in the database. 
 - Returns a JSON Array containing book details.
 
-# GET /books/:id 
+## GET /books/:id 
 - Retrieve details of a specific book by its ID.
 - Requires an ID parameter in the URL path.
 - Returns a JSON Object containing book details.
 
-# POST /add
+## POST /add
 - Adds a new book entry to the database.
 - Expects form data containing book details (name, author, yearPublished, review, summary, isbn, book_url, genre).
 
-# PATCH /edit/:id
+## PATCH /edit/:id
 - Updates the details of a specific book.
 - Requires an ID parameter in the URL path.
 - Expects data in the request body containing the updated book details.
 - Returns a JSON object containing book details.
 
-# DELETE /delete/:id
+## DELETE /delete/:id
 - Deletes a specific book from the database.
 - Requires an ID parameter in the URL path.
 - Redirects to the /books endpoint after successful deletion.
